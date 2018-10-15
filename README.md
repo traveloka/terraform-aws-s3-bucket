@@ -1,4 +1,4 @@
-# terraform-aws-elasticache-memcached
+# terraform-aws-s3-bucket
 terraform module to create S3 bucket
 
 Requirements
