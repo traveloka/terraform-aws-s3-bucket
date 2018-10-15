@@ -7,7 +7,7 @@ module "bucket_name" {
 resource "aws_s3_bucket" "this" {
   bucket = "${module.bucket_name.name}"
   region = "${var.region}"
-  acl    = "private"
+  acl    = "${var.bucket_acl}"
 
   logging {
     target_bucket = "${var.logging_bucket}"
@@ -33,9 +33,4 @@ resource "aws_s3_bucket" "this" {
     Environment   = "${var.environment}"
     ManagedBy     = "Terraform"
   }
-}
-
-resource "aws_s3_bucket_policy" "this" {
-  bucket = "${aws_s3_bucket.this.bucket}"
-  policy = "${var.bucket_policy}"
 }

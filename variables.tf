@@ -1,37 +1,47 @@
 variable "region" {
-  type = "string"
+  description = "Region of this bucket resides in"
+  type        = "string"
 }
 
 variable "product_domain" {
-  type = "string"
+  description = "Product domain abbreviation this bucket belongs to"
+  type        = "string"
 }
 
 variable "environment" {
-  type = "string"
+  description = "Environment of this bucket resides in"
+  type        = "string"
 }
 
 variable "description" {
-  type = "string"
+  description = "Description of what this bucket used for"
+  type        = "string"
 }
 
 variable "bucket_prefix" {
-  type = "string"
+  description = "Bucket prefix of this bucket"
+  type        = "string"
+}
+
+variable "bucket_acl" {
+  default     = "private"
+  description = "Bucket ACL of this bucket"
+  type        = "string"
 }
 
 variable "logging_bucket" {
-  type = "string"
+  description = "Logging bucket used for this bucket"
+  type        = "string"
 }
 
 variable "sse_algorithm" {
-  default = "AES256"
-  type    = "string"
+  description = "Encryption algorithm used for this bucket"
+  default     = "AES256"
+  type        = "string"
 }
 
 variable "enable_versioning" {
-  default = "True"
-  type    = "string"
-}
-
-variable "bucket_policy" {
-  type = "string"
+  description = "Enable versioning for this bucket"
+  default     = "True"
+  type        = "string"
 }
