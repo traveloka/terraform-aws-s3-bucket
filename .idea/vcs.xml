@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/.terraform/modules/2c899f9e97de59e16de476c7d2324382" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/test/fixture/.terraform/modules/33bd12222f15ac22a780c8f570a3f0e2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/test/fixture/.terraform/modules/8324bb1c1b5f67de987b0062a121f053" vcs="Git" />
-  </component>
-</project>
